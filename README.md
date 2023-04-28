@@ -1,6 +1,8 @@
-# Lighter
+# Lighter 
 
 ![feather img](https://i.ibb.co/fDFxKNX/download.png)
+
+
 Lighter is a command-line tool for splitting large files into smaller ones.
 
 # Installation
