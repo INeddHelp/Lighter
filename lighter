@@ -1,0 +1,12 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+cd /usr/local/bin
+sudo npm install -g mathjs
+if [[ -f "i-hope-it-works.js" ]]; then
+  if [[ ! -d "node_modules" ]]; then
+    sudo npm install
+  fi
+  sudo node /usr/local/bin/i-hope-it-works.js
+else
+  echo "Error: File 'i-hope-it-works.js' not found."
+fi

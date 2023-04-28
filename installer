@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo cp lighter /usr/local/bin
+sudo cp i-hope-it-works.js /usr/local/bin
+sudo cp package.json package-lock.json /usr/local/bin
+if ! command -v node &> /dev/null; then
+    echo "Node.js not found. Please install Node.js before running the script."
+    exit 1
+fi
+
+echo "Lighter installed successfully!"
+echo "To run Lighter, type 'lighter' in the terminal."
