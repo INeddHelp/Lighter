@@ -20,7 +20,7 @@ function lighter() {
             if (fileStat.isFile()) {
                 const file_size = fileStat.size;
                 if (file_size <= 100 * 1024 * 1024) {
-                    console.log(input);
+                    
                 } else {
                     const { dir: fileDir, name: fileName, ext: fileExt } = path.parse(input);
                     const num_parts = math.ceil(file_size / (100 * 1024 * 1024));
@@ -31,14 +31,14 @@ function lighter() {
                         const part_path = path.join(dir_name, `${fileName}_part${i + 1}${fileExt}`);
                         const partData = fileData.slice(i * 100 * 1024 * 1024, (i + 1) * 100 * 1024 * 1024);
                         fs.writeFileSync(part_path, partData);
-                        console.log(part_path);
+                        
                     }
                 }
             } else {
-                console.log(`Not a file: ${input}`);
+                
             }
         } else {
-            console.log(`File not found: ${input}`);
+            
         }
 
         lighter();
