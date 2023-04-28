@@ -2,6 +2,7 @@
   "name": "Lighter",
   "version": "1.0.0",
   "dependencies": {
+    "lighter": "^0.3.2",
     "mathjs": "^11.8.0"
   }
 }
