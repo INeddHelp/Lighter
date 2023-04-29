@@ -5,6 +5,7 @@
 Lighter is a command-line tool for splitting large files into smaller ones.
 
 # Installation
+
 ### The npm package will be soon available
 
 To install Lighter, you must have Node.js installed on your computer. Then, run the following command:
